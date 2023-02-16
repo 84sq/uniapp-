@@ -1,0 +1,151 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"navigationBarTitleText": "我的城院日记",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffdfc5"
+			}
+		}, {
+			"path": "pages/tabbar/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffdfc5",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"text": "···"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/dary/add/add",
+			"style": {
+				"navigationBarTitleText": "添加日记",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "发表",
+							"float": "right",
+							"fontSize": "30rpx",
+							"fontWeight": "bold",
+							"color": "#2c8e1a",
+							"colorPressed": "#f67d05"
+						}]
+					}
+				},
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"navigationBarBackgroundColor": "#ffdfc5"
+			}
+		}, {
+			"path": "pages/dary/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false,
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"navigationBarBackgroundColor": "#ffdfc5",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "···",
+							"float": "right",
+							"fontSize": "30rpx",
+							"fontWeight": "bold",
+							"color": "#2c8e1a",
+							"colorPressed": "#f67d05"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/dary/edit/edit",
+			"style": {
+				"navigationBarTitleText": "编辑日记",
+				"enablePullDownRefresh": false,
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"navigationBarBackgroundColor": "#ffdfc5",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "修改",
+							"float": "right",
+							"fontSize": "30rpx",
+							"fontWeight": "bold",
+							"color": "#2c8e1a",
+							"colorPressed": "#f67d05"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/user/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"navigationBarBackgroundColor": "#ffdfc5"
+			}
+
+		}, {
+			"path": "pages/user/no_login/no_login",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false,
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"navigationBarBackgroundColor": "#ffdfc5"
+			}
+		}, {
+			"path": "pages/user/goodLike/goodLike",
+			"style": {
+				"navigationBarTitleText": "我的点赞收藏",
+				"enablePullDownRefresh": false,
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+				"navigationBarBackgroundColor": "#ffdfc5"
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "我的城院日记",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#2c8e1a",
+		"selectedColor": "#f67d05",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/tabbar/index/index",
+				"iconPath": "static/index.png",
+				"selectedIconPath": "static/index-select.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/tabbar/mine/mine",
+				"iconPath": "static/mine.png",
+				"selectedIconPath": "static/my-select.png"
+			}
+
+		]
+	}
+}

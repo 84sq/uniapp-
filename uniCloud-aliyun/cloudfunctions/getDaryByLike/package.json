@@ -1,0 +1,7 @@
+{
+  "name": "getDaryByLike",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

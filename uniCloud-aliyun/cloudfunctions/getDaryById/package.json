@@ -1,0 +1,7 @@
+{
+  "name": "getDaryById",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

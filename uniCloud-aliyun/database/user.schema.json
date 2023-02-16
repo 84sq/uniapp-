@@ -1,0 +1,48 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成",
+			"foreignKey": "diary._id"
+		},
+		"username": {
+			"bsonType": "string",
+			"title": "用户名",
+			"description": "用户名，不允许为空",
+			"trim": "both"
+		},
+		"password": {
+			"bsonType": "string",
+			"title": "密码",
+			"description": "密码，加密存储",
+			"trim": "both"
+		},
+		"nickname": {
+			"bsonType": "string",
+			"title": "昵称",
+			"description": "用户昵称",
+			"trim": "both"
+		},
+		"sign":{
+			"bsonType": "string",
+			"title": "签名",
+			"description": "用户的个性签名",
+			"trim": "both"
+		},
+		"userImage":{
+			"bsonType": "object",
+			"title": "用户头像",
+			"description": "用户头像",
+			"trim": "both",
+			"defaultValue" : "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-2af1e97f-e331-4888-93ca-6118f8a7c1c5/1b6291ef-aa82-4232-97a1-7bc0641e7857.jpg"
+		}
+	}
+}

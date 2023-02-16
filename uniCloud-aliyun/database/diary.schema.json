@@ -1,0 +1,82 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"title": "用户标记",
+			"description": "用户标记",
+			"trim": "both"
+		},
+		"goodState" :{
+			"bsonType": "bool",
+			"title": "用户是否点赞",
+			"description": "用户是否点赞",
+			"defaultValue": "false",
+			"trim": "both"
+		},
+		"title": {
+			"bsonType": "string",
+			"title": "日记标题",
+			"description": "日记标题",
+			"trim": "both",
+			"defaultValue": "日记标题",
+			"maxLength": 20,
+			"minLength": 1
+		},
+		"content": {
+			"bsonType": "string",
+			"title": "日记内容",
+			"description": "日记内容",
+			"trim": "both",
+			"defaultValue": "日记内容",
+			"maxLength": 200,
+			"minLength": 1
+		},
+		"locations": {
+			"bsonType": "string",
+			"title": "地理位置",
+			"description": "地理位置",
+			"trim": "both"
+		},
+		"imaging": {
+			"bsonType": "object",
+			"title": "图片信息",
+			"description": "图片信息",
+			"trim": "both"
+		},
+		"audio": {
+			"bsonType": "object",
+			"title": "音频信息",
+			"description": "音频信息",
+			"trim": "both"
+		},
+		"audioName": {
+			"bsonType": "string",
+			"title": "音频信息的名字",
+			"description": "音频信息的名字",
+			"trim": "both"
+		},
+		"video": {
+			"bsonType": "object",
+			"title": "视频信息",
+			"description": "视频信息",
+			"trim": "both"
+
+		},
+		"darydate": {
+			"bsonType": "timestamp",
+			"description": "日记时间"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "updateGoodState",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
